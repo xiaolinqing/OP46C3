@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_OP46C3.mk
+     $(LOCAL_DIR)/twrp_OP46C3.mk
