@@ -25,13 +25,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from OP46C3 device
 $(call inherit-product, device/oppo/OP46C3/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := OP46C3
-PRODUCT_NAME := omni_OP46C3
+PRODUCT_NAME := twrp_OP46C3
 PRODUCT_BRAND := OPPO
 PRODUCT_MODEL := OPPO
 PRODUCT_MANUFACTURER := oppo
