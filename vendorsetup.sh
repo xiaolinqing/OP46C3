@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_OP46C3-userdebug
-add_lunch_combo omni_OP46C3-eng
+add_lunch_combo twrp_OP46C3-userdebug
+add_lunch_combo twrp_OP46C3-eng
