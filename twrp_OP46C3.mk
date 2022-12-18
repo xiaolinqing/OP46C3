@@ -15,6 +15,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+
+# Identifier for SoC folder
+COMMON_SOC := sm8150
+
 # Release name (automatically taken from this file's suffix)
 PRODUCT_RELEASE_NAME := $(lastword $(subst /, ,$(lastword $(subst _, ,$(firstword $(subst ., ,$(MAKEFILE_LIST)))))))
 
