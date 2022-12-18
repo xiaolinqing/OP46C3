@@ -35,9 +35,8 @@ $(call inherit-product, vendor/$(CUSTOM_VENDOR)/config/common.mk)
 $(call inherit-product, vendor/$(CUSTOM_VENDOR)/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := OP46C3
-PRODUCT_NAME := twrp_OP46C3
-PRODUCT_BRAND := OPPO
-PRODUCT_MODEL := OPPO
-PRODUCT_MANUFACTURER := oppo
-PRODUCT_RELEASE_NAME := OPPO OPPO
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
+PRODUCT_BRAND := $(BOARD_VENDOR)
+PRODUCT_MODEL := $(shell echo $(PRODUCT_BRAND) | tr  '[:lower:]' '[:upper:]')_$(PRODUCT_DEVICE)
+PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
