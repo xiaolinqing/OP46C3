@@ -15,6 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+-include $(COMMON_PATH)/BoardConfigCommon.mk
 
 DEVICE_PATH := device/oppo/OP46C3
 
